@@ -1,40 +1,90 @@
-Climate Compliance Tracker
-Project Overview
-The Climate Compliance Tracker is an interactive dashboard designed to visualize and analyze carbon emissions, renewable energy usage, and climate policies across various countries. This project aims to provide stakeholders with insights into how different nations are addressing climate change through data-driven approaches.
+# Climate Compliance Tracker
 
-Tools Used
-Database: PostgreSQL
-Programming Languages: Python
-Libraries:
-Pandas for data manipulation
-SQLAlchemy for database connection
-Plotly for data visualization
-Framework: Dash for creating the interactive web application
-What We Did
-Database Creation: We structured a PostgreSQL database with the following tables:
+## Project Overview
 
-Countries: Holds country information including name, continent, and population.
-Emissions: Contains carbon, methane, and nitrous oxide emissions data by year and country.
-Policies: Records climate-related policies implemented in each country.
-Renewables: Tracks the percentage of renewable energy usage per year by country.
-Data Ingestion: Using Python and SQLAlchemy, we fetched data from the PostgreSQL database into Pandas DataFrames for analysis.
+The **Climate Compliance Tracker** is an interactive dashboard designed to visualize and analyze carbon emissions, renewable energy usage, and climate policies across various countries. This project empowers stakeholders, researchers, and policymakers to gain insights into how nations are addressing climate change through data-driven approaches.
 
-Data Cleaning: We conducted data quality checks, ensuring there were no missing values and cleaning the datasets accordingly.
+---
 
-Data Analysis: Basic analyses were performed to compute total carbon emissions and average renewable energy percentages by country.
+## Tools & Technologies
 
-Data Visualization: Using Plotly, we created engaging visualizations, including bar charts and line graphs, to depict the findings clearly.
+* **Database:** PostgreSQL
+* **Programming Language:** Python
+* **Libraries:**
 
-Interactive Dashboard: Developed a Dash application that allows users to interact with the data, filter by country, and view specific emissions and policy details.
+  * Pandas – for data manipulation
+  * SQLAlchemy – for database connection
+  * Plotly – for interactive data visualization
+* **Framework:** Dash – for building the interactive web application
 
-Conclusion
-The Climate Compliance Tracker successfully demonstrates the power of data analytics in understanding climate actions across different countries. Through visualizations, users can easily grasp complex data and identify trends in emissions and renewable energy usage.
+---
 
-Recommendations
-Expand Dataset: Incorporate additional countries and more detailed emission types for comprehensive analysis.
-Enhance Visualizations: Include more advanced interactive charts and features, such as time series analyses and predictive modeling.
-User Feedback: Implement a feedback mechanism within the dashboard to understand user experience and areas for improvement.
-Suggestions
-Explore integrating APIs to pull real-time emissions and climate policy updates.
-Consider adding user authentication for a more personalized experience.
-Develop a mobile-friendly version of the dashboard for broader accessibility.
+## Project Structure
+
+```
+climate_compliance_project/
+├─ Data Analysis.ipynb
+├─ README.md
+├─ app.py
+└─ data.sql
+```
+---
+
+## What We Did
+
+### 1. Database Creation
+
+We structured a **PostgreSQL database** with the following tables:
+
+* **Countries:** Stores country information including name, continent, and population.
+* **Emissions:** Contains carbon, methane, and nitrous oxide emissions data by year and country.
+* **Policies:** Records climate-related policies implemented in each country.
+* **Renewables:** Tracks the percentage of renewable energy usage per year by country.
+
+### 2. Data Ingestion
+
+* Data was fetched from the PostgreSQL database into **Pandas DataFrames** using Python and SQLAlchemy for further analysis.
+
+### 3. Data Cleaning
+
+* Conducted **data quality checks** to remove missing or inconsistent values.
+* Standardized datasets for consistent and accurate analysis.
+
+### 4. Data Analysis
+
+* Computed **total carbon emissions** and **average renewable energy percentages** by country.
+* Identified trends and patterns in emissions and renewable adoption.
+
+### 5. Data Visualization
+
+* Created engaging visualizations using **Plotly**, including:
+
+  * Bar charts for emissions comparisons
+  * Line graphs to track renewable energy trends over time
+
+### 6. Interactive Dashboard
+
+* Built a **Dash application** allowing users to:
+
+  * Filter data by country
+  * Explore emissions and renewable energy usage
+  * View specific climate policy details
+
+---
+
+## Recommendations & Future Work
+
+1. **Expand Dataset:** Include more countries and detailed emission types for a comprehensive analysis.
+2. **Enhance Visualizations:** Add advanced interactive features like time series analysis and predictive modeling.
+3. **User Feedback:** Incorporate a feedback mechanism to understand user experience and areas for improvement.
+4. **API Integration:** Pull real-time emissions and policy updates for up-to-date insights.
+5. **User Authentication:** Allow personalized dashboards for individual users.
+6. **Mobile-Friendly Version:** Develop a responsive version for accessibility on mobile devices.
+
+---
+
+## Conclusion
+
+The **Climate Compliance Tracker** demonstrates the power of data analytics in understanding global climate actions. Through interactive visualizations, users can easily interpret complex datasets, monitor trends, and evaluate climate policies and renewable energy adoption across countries.
+
+---

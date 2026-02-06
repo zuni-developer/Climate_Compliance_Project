@@ -6,6 +6,14 @@ The **Climate Compliance Tracker** is an interactive dashboard designed to visua
 
 ---
 
+## Sample Output
+
+Here’s a preview of the interactive dashboard:
+
+![Dashboard Output](asset/output.png)
+
+---
+
 ## Tools & Technologies
 
 * **Database:** PostgreSQL
@@ -23,10 +31,12 @@ The **Climate Compliance Tracker** is an interactive dashboard designed to visua
 
 ```
 climate_compliance_project/
-├─ Data Analysis.ipynb
-├─ README.md
-├─ app.py
-└─ data.sql
+├─ Data Analysis.ipynb       # Jupyter notebook for data exploration and analysis
+├─ README.md                 # Project overview, instructions, and documentation
+├─ app.py                    # Dash application script for the interactive dashboard
+├─ data.sql                  # SQL script to create and populate the PostgreSQL database
+└─ asset/                    # Folder containing images and other assets
+   └─ output.png             # Sample output screenshot of the dashboard
 ```
 ---
 
@@ -72,6 +82,12 @@ We structured a **PostgreSQL database** with the following tables:
 
 ---
 
+## Conclusion
+
+The **Climate Compliance Tracker** demonstrates the power of data analytics in understanding global climate actions. Through interactive visualizations, users can easily interpret complex datasets, monitor trends, and evaluate climate policies and renewable energy adoption across countries.
+
+---
+
 ## Recommendations & Future Work
 
 1. **Expand Dataset:** Include more countries and detailed emission types for a comprehensive analysis.
@@ -83,8 +99,35 @@ We structured a **PostgreSQL database** with the following tables:
 
 ---
 
-## Conclusion
+## How to Run
 
-The **Climate Compliance Tracker** demonstrates the power of data analytics in understanding global climate actions. Through interactive visualizations, users can easily interpret complex datasets, monitor trends, and evaluate climate policies and renewable energy adoption across countries.
+Follow these steps to run the **Climate Compliance Tracker** locally:
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/your-username/climate_compliance_project.git
+cd climate_compliance_project
+```
+
+2. **Install Dependencies**
+
+```bash
+pip install dash==2.9.3
+pip install pandas sqlalchemy plotly
+```
+
+3. **Run the Dashboard**
+
+```bash
+python app.py
+```
+
+4. **Open in Browser**
+   Visit the following URL in your browser:
+
+```
+http://127.0.0.1:8050/
+```
 
 ---
